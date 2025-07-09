@@ -1,0 +1,53 @@
+.black_stripe{
+    height: 200px;
+    width: 900px;
+    background-color: black;
+}
+
+.red_stripe{
+    height: 200px;
+    width: 900px;
+    background-color: red;
+}
+
+.gold_stripe{
+    height: 200px;
+    width: 900px;
+    background-color: gold;
+}
+
+body > div{
+    position: absolute;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+@media (max-width : 800px) and (max-height : 1100px) {
+    .black_stripe{
+    height: 50px;
+    width: 225px;
+    background-color: black;
+    }
+
+    .red_stripe{
+        height: 50px;
+        width: 225px;
+        background-color: red;
+    }
+
+    .gold_stripe{
+        height: 50px;
+        width: 225px;
+        background-color: gold;
+    }
+
+    body > div{
+        position: absolute;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 4%;
+        margin-bottom: 3%;
+    }
+}

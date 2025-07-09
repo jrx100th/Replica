@@ -1,0 +1,61 @@
+.stripe1{
+    background-color: darkblue;
+    
+}
+
+.stripe2{
+    background-color: white;
+    
+}
+
+.stripe3{
+    background-color: red;
+    
+}
+
+.stripe1, .stripe2, .stripe3{
+    display: inline-block;
+    height: 22vh;
+    width: 110vh;
+    
+}
+
+body > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media (max-width : 800px) {
+    .stripe1{
+    background-color: darkblue;
+    
+}
+
+.stripe2{
+    background-color: white;
+    
+}
+
+.stripe3{
+    background-color: red;
+    
+}
+
+.stripe1, .stripe2, .stripe3{
+    display: inline-block;
+    height: 5.5vh;
+    width: 27.5vh;
+    
+}
+
+body > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+}
