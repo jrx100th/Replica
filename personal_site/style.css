@@ -1,0 +1,81 @@
+.section001{
+    background-color: #E67514;
+    height: 65.7vh;
+}
+
+.abovename{
+    background-color: #FFC107;
+    height: 3em;
+}
+
+.name{
+    color: #212121;
+    font-size: 18.8em;
+    font-family: "Staatliches";
+    margin-top: 15px;
+}
+
+.belowname{
+    background-color: #FFC107;
+    height: 3em;
+}
+
+.nameholder{
+    display: flex;
+    justify-content: center;
+}
+
+.section002{
+    background-color: #212121;
+    height: 34.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items {
+  position: relative;
+  overflow: hidden;
+  width: 900px;
+  height: 100px;
+  border-radius: 500px;
+  background: transparent; /* No flat color! */
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.items::before,
+.items::after {
+  content: "";
+  position: absolute;
+  left: -30%;
+  top: -30%;
+  width: 160%;
+  height: 160%;
+  border-radius: 50%;
+  opacity: 0.1;
+  z-index: 0;
+  filter: blur(12px);
+  mix-blend-mode: lighten;
+  animation: auroraMove 2s cubic-bezier(.6,0,.4,1) infinite alternate;
+  pointer-events: none;
+}
+.items::before {
+  background: radial-gradient(ellipse at 65% 35%, #fffddbbb 10%, #ffe053 35%, #E67514 85%, transparent 100%);
+  animation-delay: 0s;
+}
+.items::after {
+  background: radial-gradient(ellipse at 30% 75%, #f9d87b88 8%, #fff53b88 40%, #ffb50000 95%);
+  animation-delay: 0.5s;
+}
+
+@keyframes auroraMove {
+  0%   { transform: scale(5) rotate(0deg) translate(0,0);}
+  40%  { transform: scale(5.03) rotate(180deg) translate(6px,-12px);}
+  70%  { transform: scale(5.02) rotate(-180deg) translate(-6px,12px);}
+  100% { transform: scale(5) rotate(0deg) translate(0,0);}
+}
+
+
