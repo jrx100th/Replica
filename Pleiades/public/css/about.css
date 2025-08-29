@@ -1,0 +1,78 @@
+body, html {
+  margin: 0; padding: 0; height: 100%;
+  background: #000010; /* fallback */
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Full page starfield canvas (outer stars flying out) */
+.starfield-full {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: #000010;
+}
+
+/* About section and its starfield */
+.about-section {
+  position: relative;
+  margin: 3rem auto;
+  max-width: 800px;
+  border-radius: 18px;
+  background: rgba(11, 61, 145, 0.85);
+  box-shadow: 0 0 40px #FFDF22;
+  color: #E0E0E0;
+  padding: 3rem;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.starfield-about {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 18px;
+}
+
+.about-container {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #FFDF22;
+  text-shadow: 0 0 15px #FFDF22;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+em {
+  font-style: normal;
+  color: #FFDF22;
+  font-weight: 700;
+  text-shadow: 0 0 10px #FFDF22;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  #about-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-container {
+    font-size: 1rem;
+  }
+}

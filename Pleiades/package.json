@@ -1,0 +1,27 @@
+{
+  "name": "section_29",
+  "version": "1.0.0",
+  "description": "now since the opening page is done\r next is the chat page\r and this enitre site contains only two pages \r one is the opening page \r second is the chat page",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "fetch": "^1.1.0",
+    "multer": "^2.0.2",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7"
+  },
+  "keywords": []
+}

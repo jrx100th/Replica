@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat Interface - Pleiades</title>
+  <link rel="stylesheet" href="/css/chat.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="starfield">
+    <canvas id="starfield-canvas" class="starfield-canvas"></canvas>
+  </div>
+
+  <div class="main-container">
+    <nav class="side-nav">
+      <div class="nav-content">
+        <span>☰</span>
+        <div class="nav-links">
+          <a href="#">News (to be added)</a>
+          <a href="#">weather (to be added)</a>
+          <a href="/about">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="chat-container">
+      <div class="messages" id="messages">
+        <% if (Array.isArray(chatHistory) && chatHistory.length > 0) { %>
+          <% chatHistory.forEach(function(message) { %>
+            <div class="message <%= message.role === 'user' ? 'user' : 'bot' %>">
+              <strong><%= message.role === 'user' ? 'You' : 'Agent P' %>:</strong> <%= message.content %>
+            </div>
+          <% }); %>
+        <% } else if (response) { %>
+          <div class="message bot">
+            <strong>Bot:</strong> <%= response %>
+          </div>
+        <% } else { %>
+          <div class="message bot">Start the conversation by typing a message below.</div>
+        <% } %>
+      </div>
+
+      <form action="/submit" method="POST" enctype="multipart/form-data" autocomplete="off" novalidate>
+  <input type="text" name="message" placeholder="Type your message here..." required aria-label="Message input" />
+  
+  <div class="file-input-wrapper">
+    <input type="file" name="file" aria-label="File upload" id="fileInput" />
+    <span class="blackhole" id="blackhole"></span>
+  </div>
+
+  <button type="submit" aria-label="Send message">Send</button>
+</form>
+
+    </div>
+  </div>
+
+  <script src="/javascript/starfield.js"></script>
+  <script src="/javascript/chat.js"></script>
+</body>
+</html>

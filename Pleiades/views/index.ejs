@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pleiades</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div id="starfield">
+  <canvas id="starfield-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></canvas>
+  </div>
+  <div class="container">
+    <h1>Pleiades</h1>
+    <p>Your cosmic guide through the galaxy of technology</p>
+    <button id="warpButton" id="launchBtn">
+    <span id="buttonText">Click me</span>
+    </button>
+  </div>
+  <script src="/javascript/starfield.js"></script>
+  <script>
+    document.getElementById('launchBtn').addEventListener('click', () => {
+      window.location.href = '/chat'; // Redirect to chatbot page
+    });
+  </script>
+  <script src="/javascript/slowfadeout.js"></script>
+</body>
+</html>
