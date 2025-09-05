@@ -56,7 +56,7 @@ The prompt enforces a friendly, patient, and encouraging tone. It tailors explan
 
 ***
 
-## Required Reasoning Answers
+## Reasoning Answers
 
 1. **What Tone and Style Should the AI Use When Responding?**  
    Friendly, patient, and motivating with a conversational style that builds confidence. Beginner explanations use relatable analogies and simple terms; advanced learners receive more technical depth and tools suggestions. The style adapts dynamically to student progress.
@@ -68,3 +68,4 @@ The prompt enforces a friendly, patient, and encouraging tone. It tailors explan
    Beginners get simpler explanations, basic analogies, and fundamental debugging strategies like adding print statements. Advanced learners receive deeper technical details, performance considerations, and suggestions for using advanced debugging tools like `pdb`.
 
 ***
+
