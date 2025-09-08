@@ -82,9 +82,7 @@ Key criteria to assess model suitability include interpretability of generated p
 - **Trade-offs** include balancing model accuracy and depth (favoring large models) against interpretability and computational feasibility (favoring smaller distilled models), along with licensing and deployment considerations affecting total cost and accessibility.
 - **Choice of DeepSeek R1 Distilled 7.1B** was driven by its combination of permissive licensing, manageable hardware requirements, and architecture focused on reasoning and tutoring, though it may have slightly reduced reasoning detail compared to the full V3.1 variant — a practical compromise for deployment and fine-tuning in educational contexts.
 
-This plan ensures thorough, realistic evaluation of model fitness for the specific goal of Python learning competence assessment.
 
-Here is a structured stepwise approach with the requested reasoning and model filtration for the Python Screening Task 3:
 
 ***
 
@@ -118,3 +116,4 @@ References :
 (https://www.coursera.org/learn/open-source-ai-models)
 
 (https://acris.aalto.fi/ws/portalfiles/portal/154625575/SCI_Koutcheme_etal_ITiCSE_2024.pdf)
+
