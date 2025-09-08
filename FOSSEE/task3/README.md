@@ -97,17 +97,6 @@ The final recommendation focuses on **DeepSeek** and **Qwen 7B** as promising op
 - Reasoning ability for nuanced prompt generation
 - Potential for fine-tuning or adaptation for tutoring use cases
 
-This layered approach ensures a practical, legal, and technical fit for FOSSEE’s possible educational AI application without recommending oversized or locked-down models that are commercially restrictive or unsuitable for deployment on modest resources.
-
-***
-
-If needed, a detailed research plan can follow from this filtering methodology describing evaluation criteria, testing methodology, reasoning on trade-offs, and final model suitability rationale as per the screening task requirements.
-
-
-
-
-
-
 
 References : 
 
@@ -127,4 +116,5 @@ References :
 (https://www.instaclustr.com/education/open-source-ai/top-10-open-source-llms-for-2025/)
 (https://journal.esrgroups.org/jes/article/download/7925/5404/14507)
 (https://www.coursera.org/learn/open-source-ai-models)
+
 (https://acris.aalto.fi/ws/portalfiles/portal/154625575/SCI_Koutcheme_etal_ITiCSE_2024.pdf)
